@@ -14,7 +14,7 @@
       padding: 40px 20px;
     }
     .container {
-      max-width: 720px;
+      max-width: 760px;
       margin: 0 auto;
       background: #fff;
       border-radius: 16px;
@@ -39,27 +39,46 @@
       color: #1A3A2A;
       margin-bottom: 6px;
     }
+    .meta {
+      font-size: 13px;
+      color: #999;
+      margin-bottom: 8px;
+    }
+    .meta strong { color: #666; }
     .updated {
       font-size: 13px;
       color: #999;
       margin-bottom: 36px;
     }
     h2 {
-      font-size: 16px;
-      font-weight: 600;
+      font-size: 17px;
+      font-weight: 700;
       color: #1A3A2A;
-      margin-top: 32px;
+      margin-top: 36px;
       margin-bottom: 10px;
     }
-    p, li {
+    h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: #2A4A3A;
+      margin-top: 20px;
+      margin-bottom: 8px;
+    }
+    p {
       font-size: 15px;
       color: #444;
+      margin-bottom: 12px;
     }
-    ul {
-      padding-left: 20px;
+    ul, ol {
+      padding-left: 22px;
       margin-top: 6px;
+      margin-bottom: 12px;
     }
-    li { margin-bottom: 6px; }
+    li {
+      font-size: 15px;
+      color: #444;
+      margin-bottom: 6px;
+    }
     a { color: #C9952A; text-decoration: none; }
     a:hover { text-decoration: underline; }
     .highlight-box {
@@ -67,7 +86,7 @@
       border-left: 3px solid #C9952A;
       border-radius: 8px;
       padding: 16px 20px;
-      margin-top: 14px;
+      margin: 14px 0 18px;
     }
     .highlight-box p { color: #444; margin-bottom: 0; }
     .divider {
@@ -81,8 +100,42 @@
       text-align: center;
       margin-top: 40px;
     }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 14px 0 18px;
+      font-size: 14px;
+    }
+    th {
+      background: #F5F0E8;
+      color: #1A3A2A;
+      font-weight: 600;
+      text-align: left;
+      padding: 10px 14px;
+      border: 1px solid #EEE8DC;
+    }
+    td {
+      padding: 9px 14px;
+      border: 1px solid #EEE8DC;
+      color: #444;
+      vertical-align: top;
+    }
+    tr:nth-child(even) td { background: #FDFAF5; }
+    .version-badge {
+      display: inline-block;
+      background: #1A3A2A;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
     @media (max-width: 600px) {
       .container { padding: 32px 20px; }
+      table { font-size: 13px; }
+      th, td { padding: 8px 10px; }
     }
   </style>
 </head>
@@ -92,77 +145,370 @@
     <div class="logo">Curiositi</div>
     <div class="tagline">AI-powered learning for curious minds</div>
 
-    <h1>Privacy Policy</h1>
-    <div class="updated">Last updated: April 2026</div>
+    <h1>Privacy Policy <span class="version-badge">Version 2.0</span></h1>
+    <div class="meta"><strong>Effective Date:</strong> 27 April 2026</div>
+    <div class="updated">Last Updated: 27 April 2026</div>
 
-    <p>Curiositi ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use the Curiositi mobile application.</p>
+    <p>This Privacy Policy explains how Curiositi ("we", "our", or "us") collects, uses, stores and protects your personal information when you use the Curiositi mobile application and related services. By using Curiositi you agree to the practices described in this policy.</p>
 
-    <h2>1. Information We Collect</h2>
+    <p>If you do not agree with this Privacy Policy please do not use Curiositi.</p>
+
+    <h2>1. Who We Are</h2>
+    <p>Curiositi is an AI-powered micro-learning application that helps users learn any topic in minutes through AI-generated Spark Cards, quizzes and insights. The app is designed for curious individuals, students and professionals primarily in India and Australia.</p>
+    <p>For privacy-related queries please contact us at:<br/>
+    Email: <a href="mailto:privacy@curiositi.app">privacy@curiositi.app</a><br/>
+    Grievance Officer (India): <a href="mailto:privacy@curiositi.app">privacy@curiositi.app</a><br/>
+    Response time: Within 48 hours</p>
+
+    <h2>2. Information We Collect</h2>
+    <p>We collect only the information necessary to provide and improve the Curiositi experience.</p>
+
+    <h3>2.1 Account and Authentication Information</h3>
+    <p>When you sign in with Google or Apple we receive:</p>
     <ul>
-      <li><strong>Account information</strong> — name, email address, and country when you sign up</li>
-      <li><strong>Learning session history</strong> — topics explored, quiz results, and session duration</li>
-      <li><strong>Voice input</strong> — microphone audio is processed in real time to convert speech to text for search; we do not store raw audio recordings</li>
-      <li><strong>Device and usage data</strong> — device type, OS version, and in-app interactions used to improve the app</li>
-      <li><strong>Consent record</strong> — age confirmation and date of consent, required under DPDP Act 2023</li>
+      <li>Your name</li>
+      <li>Your email address</li>
+      <li>A unique identifier from Google or Apple</li>
+    </ul>
+    <p>Curiositi does not support anonymous or guest accounts. All users must sign in with Google or Apple to use the app.</p>
+
+    <h3>2.2 Profile Information</h3>
+    <p>During onboarding we collect:</p>
+    <ul>
+      <li>Your profession or role</li>
+      <li>Your primary learning goal (e.g. exam preparation, professional growth, general curiosity)</li>
+      <li>Your exam target if applicable (e.g. UPSC, NEET, JEE, CA)</li>
+      <li>Your country — used to show relevant content and local support resources</li>
+      <li>Your preferred language for content</li>
     </ul>
 
-    <h2>2. How We Use Your Data</h2>
+    <h3>2.3 Learning Activity</h3>
+    <p>As you use Curiositi we collect:</p>
     <ul>
-      <li>Personalise your learning experience and topic recommendations</li>
-      <li>Track your progress, streaks, and knowledge mastery</li>
-      <li>Improve our AI models and content quality</li>
-      <li>Send optional learning reminders (only if you enable notifications)</li>
-      <li>Provide country-appropriate crisis resources when a query indicates distress</li>
+      <li>Topics you search for and explore</li>
+      <li>Quiz scores and performance data</li>
+      <li>Session duration and time budgets selected</li>
+      <li>Explain Back responses and AI scores</li>
+      <li>Topics saved to your Library</li>
+      <li>Synthesis Lab fusions created</li>
+      <li>Learning streaks and session counts</li>
     </ul>
 
-    <h2>3. Microphone Permission</h2>
-    <p>Curiositi requests access to your device microphone solely to enable voice search — so you can speak a topic instead of typing it. Audio is converted to text on-device or via a secure API and is never stored or shared. You can revoke microphone access at any time in your device settings.</p>
-
-    <h2>4. Data Sharing</h2>
-    <p>We do not sell your personal data. We may share anonymised, aggregated data with partners for research purposes only. We use the following trusted third-party services:</p>
+    <h3>2.4 Device Identifier</h3>
+    <p>We generate a random anonymised identifier on your device when you first launch the app. This identifier is:</p>
     <ul>
-      <li><strong>Supabase</strong> — secure database and authentication infrastructure</li>
-      <li><strong>Google Sign-In / Apple Sign-In</strong> — optional authentication providers</li>
-      <li><strong>Google Gemini API</strong> — AI content generation (topic content only, no personal data sent)</li>
+      <li>Stored locally on your device in encrypted storage</li>
+      <li>Used solely to manage usage limits within Curiositi</li>
+      <li>Not linked to your personal identity</li>
+      <li>Not shared with third parties</li>
+      <li>Not used for advertising or cross-app tracking</li>
+      <li>Reset when you uninstall the app</li>
     </ul>
 
-    <h2>5. Device Identifier</h2>
-    <p>We use a device identifier to manage usage limits within the app. This identifier is not shared with third parties and is not used for advertising.</p>
-
-    <h2>6. Content Safety</h2>
-    <p>We automatically screen queries to prevent harmful content generation. Queries that may indicate distress are handled with care and crisis resources are provided. All screening is done anonymously — we store only a hashed fingerprint of flagged queries, never the raw text.</p>
-
-    <h2>7. Your Rights under DPDP Act 2023 (India)</h2>
-    <p>If you are in India, you have the following rights under the Digital Personal Data Protection Act 2023:</p>
+    <h3>2.5 Safety and Content Moderation Data</h3>
+    <p>Every search query you submit is reviewed by our AI safety system before content is generated. We log an anonymised record when our safety system detects a concerning query. Specifically:</p>
+    <p><strong>What is logged:</strong></p>
     <ul>
-      <li>Access the personal data we hold about you</li>
-      <li>Correct inaccurate or incomplete personal data</li>
-      <li>Erase your personal data (by deleting your account)</li>
-      <li>Nominate another person to exercise rights on your behalf</li>
-      <li>Withdraw consent at any time by deleting your account from the Profile tab</li>
+      <li>The category of detection (e.g. self-harm, harmful content, threat)</li>
+      <li>A one-way cryptographic hash of the query — the original text cannot be recovered from this hash</li>
+      <li>Your country and detected language</li>
+      <li>The timestamp of the detection</li>
+      <li>Whether a teacher or parent alert was sent (for institutional users)</li>
     </ul>
+    <p><strong>What is never logged:</strong></p>
+    <ul>
+      <li>The original query text in readable form</li>
+      <li>Your personal identity linked directly to the query</li>
+    </ul>
+
+    <h3>2.6 Session History for Safety</h3>
+    <p>Your most recent learning topics (up to 5) are temporarily passed to our safety classifier to detect escalating patterns of distress across a session. This data is used solely for your safety and wellbeing and is not stored separately or used for any other purpose.</p>
+
+    <h3>2.7 Push Notification Token</h3>
+    <p>If you enable push notifications we store your device push token to send you daily learning insights, reminders and wellbeing resources. You can disable push notifications at any time in your device settings.</p>
+
+    <h3>2.8 Technical Information</h3>
+    <p>We collect standard technical information including:</p>
+    <ul>
+      <li>App version and operating system version</li>
+      <li>Device type (iPhone, iPad, Android)</li>
+      <li>Crash reports and error logs for app improvement</li>
+      <li>App usage patterns for performance optimisation</li>
+    </ul>
+
+    <h2>3. How We Use Your Information</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Information</th>
+          <th>How We Use It</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Name and email</td><td>Account identification, personalisation, re-engagement</td></tr>
+        <tr><td>Profession and learning goal</td><td>Personalise trending topics, spotlight and content</td></tr>
+        <tr><td>Country</td><td>Show relevant local crisis and emergency resources</td></tr>
+        <tr><td>Learning topics and scores</td><td>Build your progress profile, detect knowledge gaps, generate synthesis challenges</td></tr>
+        <tr><td>Device identifier</td><td>Enforce usage limits, prevent limit bypass</td></tr>
+        <tr><td>Safety logs (hashed)</td><td>Monitor platform safety, detect patterns, compliance</td></tr>
+        <tr><td>Push token</td><td>Send daily learning insights and wellbeing alerts</td></tr>
+        <tr><td>Session history</td><td>Real-time safety classification within session only</td></tr>
+        <tr><td>Crash reports</td><td>Fix bugs and improve app stability</td></tr>
+      </tbody>
+    </table>
+
     <div class="highlight-box">
-      <p>To exercise any of the above rights, contact us at <a href="mailto:support@curiositi.app">support@curiositi.app</a>. We will respond within 30 days.</p>
+      <p>We do not use your information for advertising. We do not sell your data. We do not build advertising profiles. Curiositi products are ad-free.</p>
     </div>
 
-    <h2>8. Data Retention</h2>
-    <p>Your data is retained while your account is active. You may delete your account at any time from the <strong>Profile</strong> tab inside the app. Upon deletion, all your personal data, learning history, and sessions are permanently removed within 30 days.</p>
+    <h2>4. AI-Generated Content</h2>
+    <p>Curiositi uses Google Gemini AI to generate educational content based on your search queries. Please be aware:</p>
+    <ul>
+      <li>All content is AI-generated and may occasionally contain inaccuracies</li>
+      <li>Content is generated for general educational purposes only and is not professional advice</li>
+      <li>We do not claim copyright over AI-generated content displayed to you</li>
+      <li>You may use generated content for personal learning only</li>
+      <li>Commercial reproduction or redistribution of generated content is not permitted</li>
+      <li>Your queries are sent to Google Gemini for content generation — please see Google's privacy policy for how they handle API requests</li>
+    </ul>
+    <p>Today's news headlines from Google News RSS are used to generate relevant trending topics and spotlight content. No personal data is included in news headline fetching.</p>
 
-    <h2>9. Security</h2>
-    <p>We use industry-standard encryption (TLS in transit, AES at rest) and Supabase's secure infrastructure to protect your data. Access to production data is strictly limited to authorised team members.</p>
+    <h2>5. Content Safety System</h2>
+    <p>Curiositi operates a comprehensive content safety system to protect all users.</p>
 
-    <h2>10. Children's Privacy</h2>
-    <p>Curiositi is not intended for children under the age of 13. By creating an account you confirm you are 13 years of age or older. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us and we will delete it promptly.</p>
+    <h3>5.1 How It Works</h3>
+    <p>Every search query you submit is reviewed by our AI safety classifier before content is generated. The classifier reviews queries in any language including English, Hindi, Tamil, Telugu, Bengali, Arabic and others.</p>
 
-    <h2>11. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. We will notify you of significant changes via the app or email. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+    <h3>5.2 What We Detect</h3>
+    <ul>
+      <li>Self-harm or crisis signals in any language or script</li>
+      <li>Academic pressure crisis signals (particularly during exam seasons)</li>
+      <li>Threats to individuals</li>
+      <li>Threats to public safety or society</li>
+      <li>Communal or hate-based content</li>
+      <li>Requests for harmful or dangerous instructions</li>
+    </ul>
 
-    <h2>12. Contact Us</h2>
-    <p>For any privacy concerns or data requests, please contact us at:<br/>
-    <a href="mailto:support@curiositi.app">support@curiositi.app</a></p>
+    <h3>5.3 What Happens When Detected</h3>
+    <ul>
+      <li>Content is not generated for the query</li>
+      <li>Appropriate support resources and crisis helplines are shown</li>
+      <li>An anonymised safety log is created (hashed query only — original text not stored)</li>
+      <li>For institutional users (schools): teacher may receive an anonymous wellbeing alert</li>
+      <li>For institutional users: parent or guardian may be notified for high-severity events</li>
+    </ul>
+
+    <h3>5.4 Crisis Resources</h3>
+    <p>When our safety system detects a self-harm or crisis signal we show verified local crisis resources. For Indian users these include Tele-MANAS (14416), KIRAN (1800-599-0019) and iCall (9152987821). For Australian users these include Kids Helpline (1800 55 1800) and Lifeline (13 11 14). Crisis resources are cached on your device and available even without internet connection.</p>
+
+    <h3>5.5 Seasonal Sensitivity</h3>
+    <p>Our safety detection threshold is automatically lowered during high-stress academic periods including board exam results seasons, entrance exam periods and end-of-term assessment times. This ensures more sensitive detection when students are most vulnerable.</p>
+
+    <h2>6. Information Sharing</h2>
+    <p>We do not sell, rent or trade your personal information. We share information only in the following limited circumstances:</p>
+
+    <h3>6.1 Service Providers</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Provider</th>
+          <th>Service</th>
+          <th>Data Shared</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Google Gemini AI</td><td>Content generation and safety classification</td><td>Search queries, year level, language, learning goal</td></tr>
+        <tr><td>Supabase</td><td>Database, authentication and infrastructure</td><td>All user data — stored securely</td></tr>
+        <tr><td>Google Sign In</td><td>Authentication</td><td>Email and name from Google account</td></tr>
+        <tr><td>Apple Sign In</td><td>Authentication</td><td>Email and name from Apple account</td></tr>
+        <tr><td>Unsplash</td><td>Topic images</td><td>Search query for image only — no personal data</td></tr>
+        <tr><td>Expo</td><td>Push notifications</td><td>Push notification token only</td></tr>
+        <tr><td>Google News RSS</td><td>News headlines for content</td><td>No personal data sent</td></tr>
+      </tbody>
+    </table>
+
+    <h3>6.2 Legal Requirements</h3>
+    <p>We may disclose your information if required by law, court order or government authority. We will notify you of such requests where legally permitted.</p>
+
+    <h3>6.3 Safety Emergencies</h3>
+    <p>In cases where we believe there is an immediate risk to the safety of a user or others we may share relevant information with appropriate authorities or emergency services.</p>
+
+    <h3>6.4 Institutional Users</h3>
+    <p>If you use Curiositi through a school or educational institution:</p>
+    <ul>
+      <li>Your teacher can see your learning topics, quiz scores and progress</li>
+      <li>Your parent or guardian receives progress updates and wellbeing notifications with their consent</li>
+      <li>Your school administrator has access to school-wide learning data</li>
+      <li>Wellbeing alerts are sent to teachers and parents when our safety system detects a concerning query</li>
+      <li>All institutional data sharing is governed by a separate Data Processing Agreement with the school</li>
+    </ul>
+
+    <h2>7. Data Storage and Security</h2>
+
+    <h3>7.1 Where Your Data Is Stored</h3>
+    <p>Your data is stored on Supabase servers. All data is encrypted at rest and in transit using industry-standard encryption.</p>
+
+    <h3>7.2 Security Measures</h3>
+    <ul>
+      <li>All data encrypted at rest using AES-256</li>
+      <li>All data in transit encrypted using TLS 1.3</li>
+      <li>Row Level Security in database ensures complete user data isolation</li>
+      <li>API keys and secrets stored in secure server-side environment variables only</li>
+      <li>Service role keys never exposed to client applications</li>
+      <li>Regular security reviews and access audits</li>
+    </ul>
+
+    <h3>7.3 Data Retention</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Data Type</th>
+          <th>Retention Period</th>
+          <th>Reason</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Account and profile data</td><td>Duration of account</td><td>Service provision</td></tr>
+        <tr><td>Learning activity and scores</td><td>Duration of account</td><td>Progress tracking</td></tr>
+        <tr><td>Safety logs (hashed queries)</td><td>7 years</td><td>Compliance and monitoring</td></tr>
+        <tr><td>Device identifier</td><td>30 days rolling</td><td>Usage limit enforcement</td></tr>
+        <tr><td>Push notification token</td><td>Duration of account</td><td>Notifications</td></tr>
+        <tr><td>Consent records</td><td>7 years</td><td>Legal compliance</td></tr>
+        <tr><td>Account data after deletion</td><td>Purged within 30 days</td><td>Complete erasure</td></tr>
+        <tr><td>Crash and error logs</td><td>90 days</td><td>Bug fixing</td></tr>
+      </tbody>
+    </table>
+
+    <h2>8. Your Rights and Choices</h2>
+
+    <h3>8.1 Rights Under Indian Law (DPDP Act 2023)</h3>
+    <p>Under the Digital Personal Data Protection Act 2023 you have the following rights:</p>
+    <ul>
+      <li><strong>Right to Access:</strong> Request a copy of the personal data we hold about you</li>
+      <li><strong>Right to Correction:</strong> Request correction of inaccurate or incomplete personal data</li>
+      <li><strong>Right to Erasure:</strong> Delete your account and all associated personal data using the in-app account deletion feature or by contacting us</li>
+      <li><strong>Right to Grievance Redressal:</strong> Contact our Grievance Officer for privacy concerns — we respond within 48 hours</li>
+      <li><strong>Right to Nomination:</strong> Nominate another person to exercise your data rights in case of death or incapacity</li>
+      <li><strong>Right to Withdraw Consent:</strong> Withdraw consent for data processing at any time by deleting your account</li>
+    </ul>
+
+    <h3>8.2 Rights Under Australian Law</h3>
+    <p>Under the Privacy Act 1988 (Cth) and Australian Privacy Principles you have the right to:</p>
+    <ul>
+      <li>Access the personal information we hold about you</li>
+      <li>Request correction of inaccurate personal information</li>
+      <li>Make a complaint about how we handle your personal information</li>
+      <li>Opt out of direct marketing communications</li>
+    </ul>
+
+    <h3>8.3 How to Exercise Your Rights</h3>
+    <ul>
+      <li><strong>Account deletion:</strong> Profile tab → Settings → Delete Account (complete deletion within 30 days)</li>
+      <li><strong>Data access or correction:</strong> Email <a href="mailto:privacy@curiositi.app">privacy@curiositi.app</a></li>
+      <li><strong>Grievance (India):</strong> Email <a href="mailto:privacy@curiositi.app">privacy@curiositi.app</a> — response within 48 hours</li>
+      <li><strong>Complaint (Australia):</strong> Contact us first, then the Office of the Australian Information Commissioner if unresolved</li>
+    </ul>
+
+    <h3>8.4 Push Notifications</h3>
+    <p>You can disable push notifications at any time in your device Settings app. This does not affect your ability to use Curiositi.</p>
+
+    <h3>8.5 Account Deletion</h3>
+    <p>You can delete your account at any time from Profile → Settings → Delete Account. Account deletion permanently removes:</p>
+    <ul>
+      <li>Your profile and authentication data</li>
+      <li>All learning sessions and quiz scores</li>
+      <li>All saved topics and bookmarks</li>
+      <li>All synthesis fusions and cognitive gap data</li>
+      <li>Your push notification token</li>
+    </ul>
+    <p>Safety logs (hashed — not linked to readable identity) are retained for 7 years for compliance purposes. Apple Sign In tokens are revoked upon account deletion.</p>
+
+    <h2>9. Children and Age Requirements</h2>
+    <p>Curiositi is intended for users aged 13 and older. Users between 13 and 18 should use the app with parental awareness.</p>
+    <p>We do not knowingly collect personal data from children under 13. If you are a parent or guardian and believe your child under 13 has created a Curiositi account please contact <a href="mailto:privacy@curiositi.app">privacy@curiositi.app</a> immediately and we will delete the account and all associated data.</p>
+    <p>For users under 18 using Curiositi through a school all data collection is governed by the school's Data Processing Agreement and parental consent is obtained before account activation.</p>
+
+    <h2>10. Content Standards</h2>
+    <p>Curiositi is a general-purpose learning app designed to be safe for users of all ages. We do not generate content related to:</p>
+    <ul>
+      <li>Self-harm or suicide methods</li>
+      <li>Weapons, explosives or dangerous substances</li>
+      <li>Illegal activities or criminal instructions</li>
+      <li>Graphic violence or disturbing content</li>
+      <li>Adult or sexual content</li>
+      <li>Hate speech targeting any group</li>
+      <li>Content that could endanger public safety</li>
+    </ul>
+    <p>Queries on these topics are automatically redirected to appropriate support resources. This makes Curiositi appropriate for students, families and workplace environments.</p>
+
+    <h2>11. Third Party Links and Services</h2>
+    <p>Curiositi may display topic images from Unsplash with photographer attribution. Tapping attribution links will open the Unsplash website or photographer profile. Unsplash's privacy policy governs data collected on their platform.</p>
+    <p>Signing in with Google or Apple is governed by Google's and Apple's respective privacy policies. We encourage you to review their policies.</p>
+    <p>Crisis helpline numbers shown in the app connect to independent organisations. Their privacy practices are governed by their own policies.</p>
+
+    <h2>12. International Data Transfers</h2>
+    <p>Your data may be processed outside your country of residence. When data is transferred internationally we ensure appropriate safeguards are in place including:</p>
+    <ul>
+      <li>Standard contractual clauses with service providers</li>
+      <li>Processing only in jurisdictions with adequate data protection laws</li>
+      <li>Encryption of all data in transit</li>
+    </ul>
+    <p><strong>Users in India:</strong> Your data may be processed in Singapore or other jurisdictions. We comply with the Digital Personal Data Protection Act 2023 requirements for cross-border data transfers.</p>
+    <p><strong>Users in Australia:</strong> Your data may be processed in Singapore or other jurisdictions. We comply with the Australian Privacy Principles for overseas disclosure of personal information.</p>
+
+    <h2>13. Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time. When we make significant changes we will:</p>
+    <ul>
+      <li>Update the Effective Date at the top of this policy</li>
+      <li>Show an in-app notification informing you of the changes</li>
+      <li>For material changes require you to review and acknowledge the updated policy</li>
+    </ul>
+    <p>Continued use of Curiositi after changes are posted constitutes your acceptance of the updated policy.</p>
+
+    <h2>14. Contact Us</h2>
+    <p>For any privacy-related questions, requests or concerns:</p>
+
+    <p><strong>General Privacy Queries:</strong><br/>
+    Email: <a href="mailto:privacy@curiositi.app">privacy@curiositi.app</a><br/>
+    Response time: Within 48 hours</p>
+
+    <p><strong>Grievance Officer (India — DPDP Act 2023):</strong><br/>
+    Email: <a href="mailto:privacy@curiositi.app">privacy@curiositi.app</a><br/>
+    Response time: Within 48 hours as required by law</p>
+
+    <p><strong>For Australian Privacy Act Concerns:</strong><br/>
+    Email: <a href="mailto:privacy@curiositi.app">privacy@curiositi.app</a><br/>
+    If unresolved: Office of the Australian Information Commissioner — <a href="https://www.oaic.gov.au" target="_blank">oaic.gov.au</a></p>
+
+    <h2>15. Summary of Key Points</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Question</th>
+          <th>Answer</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Do you sell my data?</td><td>No — never</td></tr>
+        <tr><td>Do you show ads?</td><td>No — Curiositi is ad-free</td></tr>
+        <tr><td>Do you support guest accounts?</td><td>No — Google or Apple Sign In required</td></tr>
+        <tr><td>Can I delete my account?</td><td>Yes — from Profile settings anytime</td></tr>
+        <tr><td>Is content AI-generated?</td><td>Yes — by Google Gemini AI</td></tr>
+        <tr><td>Is the app safe for children 13+?</td><td>Yes — comprehensive content safety system</td></tr>
+        <tr><td>Are my queries read by humans?</td><td>No — only hashed anonymised logs for safety monitoring</td></tr>
+        <tr><td>What happens if I type something concerning?</td><td>Support resources shown, anonymised log created</td></tr>
+        <tr><td>Is my data encrypted?</td><td>Yes — at rest and in transit</td></tr>
+        <tr><td>Can I get a copy of my data?</td><td>Yes — email privacy@curiositi.app</td></tr>
+      </tbody>
+    </table>
 
     <div class="divider"></div>
-    <div class="footer">&copy; 2026 Curiositi. All rights reserved.</div>
+
+    <div class="footer">
+      Curiositi Privacy Policy — Version 2.0 — Effective 27 April 2026<br/>
+      Questions? Contact <a href="mailto:privacy@curiositi.app">privacy@curiositi.app</a>
+    </div>
 
   </div>
 </body>
