@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curiositi Support</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%231A3A2A'/></svg>" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #fff;
+      color: #1a1a1a;
+      line-height: 1.6;
+      padding: 0 20px;
+    }
+
+    .page {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 48px 0 64px;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      text-align: center;
+      padding-bottom: 48px;
+      border-bottom: 1px solid #eee;
+      margin-bottom: 48px;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      color: #1A3A2A;
+      background: #eaf2ec;
+      border-radius: 20px;
+      padding: 4px 14px;
+      margin-bottom: 18px;
+    }
+    .hero h1 {
+      font-size: 30px;
+      font-weight: 700;
+      color: #1A3A2A;
+      margin-bottom: 10px;
+      letter-spacing: -0.5px;
+    }
+    .hero p {
+      font-size: 16px;
+      color: #666;
+    }
+
+    /* ── Section headings ── */
+    .section { margin-bottom: 52px; }
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #999;
+      margin-bottom: 20px;
+    }
+
+    /* ── Contact cards ── */
+    .cards { display: flex; flex-direction: column; gap: 14px; }
+    .card {
+      border: 1px solid #e8e8e8;
+      border-left: 3px solid #1A3A2A;
+      border-radius: 8px;
+      padding: 18px 20px;
+    }
+    .card-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: #1A3A2A;
+      margin-bottom: 6px;
+    }
+    .card p {
+      font-size: 14px;
+      color: #555;
+    }
+    .card a {
+      color: #C9952A;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .card a:hover { text-decoration: underline; }
+
+    /* ── FAQ ── */
+    .faq-list { border-top: 1px solid #eee; }
+    .faq-item {
+      padding: 20px 0;
+      border-bottom: 1px solid #eee;
+    }
+    .faq-q {
+      font-size: 15px;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 8px;
+    }
+    .faq-a {
+      font-size: 14px;
+      color: #555;
+    }
+    .faq-a a {
+      color: #C9952A;
+      text-decoration: none;
+    }
+    .faq-a a:hover { text-decoration: underline; }
+
+    /* ── Bug steps ── */
+    .steps { display: flex; flex-direction: column; gap: 16px; }
+    .step { display: flex; gap: 14px; align-items: flex-start; }
+    .step-num {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #1A3A2A;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1px;
+    }
+    .step-text {
+      font-size: 14px;
+      color: #444;
+      padding-top: 4px;
+    }
+    .step-text a {
+      color: #C9952A;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .step-text a:hover { text-decoration: underline; }
+
+    /* ── Crisis ── */
+    .crisis-intro {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 18px;
+    }
+    .pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .pill {
+      background: #f4f4f4;
+      border-radius: 999px;
+      padding: 8px 16px;
+      font-size: 13px;
+      color: #1A3A2A;
+      font-weight: 500;
+    }
+    .pill span {
+      color: #888;
+      font-weight: 400;
+      margin-right: 4px;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      border-top: 1px solid #eee;
+      padding-top: 32px;
+      text-align: center;
+    }
+    .footer-brand {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1A3A2A;
+      margin-bottom: 10px;
+    }
+    .footer-brand a {
+      color: #C9952A;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 13px;
+    }
+    .footer-brand a:hover { text-decoration: underline; }
+    .footer-links {
+      font-size: 13px;
+      color: #999;
+      margin-bottom: 10px;
+    }
+    .footer-links a {
+      color: #999;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+    .footer-links a:hover { color: #1A3A2A; }
+    .footer-copy {
+      font-size: 12px;
+      color: #bbb;
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 24px; }
+      .page { padding: 36px 0 48px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- Hero -->
+    <div class="hero">
+      <div class="badge">CURIOSITI SUPPORT</div>
+      <h1>How can we help you?</h1>
+      <p>Find answers to common questions or get in touch with our team.</p>
+    </div>
+
+    <!-- Contact Us -->
+    <div class="section">
+      <div class="section-title">Contact Us</div>
+      <div class="cards">
+        <div class="card">
+          <div class="card-title">Email support</div>
+          <p>For general questions, feedback or account help.<br/>
+          <a href="mailto:dmshuklaa@gmail.com">dmshuklaa@gmail.com</a> — we respond within 48 hours</p>
+        </div>
+        <div class="card">
+          <div class="card-title">Privacy and data requests</div>
+          <p>To access, correct or delete your personal data, or for DPDP Act grievances.<br/>
+          <a href="mailto:dmshuklaa@gmail.com">dmshuklaa@gmail.com</a> — we respond within 48 hours</p>
+        </div>
+        <div class="card">
+          <div class="card-title">Safety concerns</div>
+          <p>To report a content safety issue or platform concern.<br/>
+          <a href="mailto:dmshuklaa@gmail.com">dmshuklaa@gmail.com</a> — monitored daily</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="section">
+      <div class="section-title">Frequently Asked Questions</div>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-q">How do I delete my account?</div>
+          <div class="faq-a">Go to Profile tab → Settings → Delete Account. Your account and all associated data will be permanently deleted within 30 days. This action cannot be undone.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">How many questions can I ask per day?</div>
+          <div class="faq-a">Curiositi uses a tiered rolling window system. New users get 10 sparks in their first 12 hours, then 5 sparks per 6-hour window. The counter resets automatically every 6 hours.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">Why was my topic blocked?</div>
+          <div class="faq-a">Curiositi is a general learning app designed to be safe for all ages. Some topics related to self-harm, harmful content, threats or hate speech are not covered. If you were shown support resources please reach out to the helplines provided — they are free and confidential.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">Is the content accurate?</div>
+          <div class="faq-a">All content is AI-generated by Google Gemini and is designed for general educational purposes. While we aim for accuracy AI-generated content may occasionally contain errors. Always verify important information from authoritative sources.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">Which languages are supported?</div>
+          <div class="faq-a">Curiositi supports 9 Indian languages including Hindi, Bengali, Tamil, Telugu, Marathi, Gujarati, Kannada, Malayalam and Punjabi, plus English. Select your preferred language during onboarding or change it in Profile settings.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">How do I sign in?</div>
+          <div class="faq-a">Curiositi supports Google Sign In and Apple Sign In. We do not support guest or anonymous accounts. Use your existing Google or Apple account to sign in — no new password needed.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">Is Curiositi free?</div>
+          <div class="faq-a">Yes — Curiositi is free to use with a daily spark limit. There are no ads. We may introduce optional premium features in the future.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">How do I request my personal data?</div>
+          <div class="faq-a">Email <a href="mailto:dmshuklaa@gmail.com">dmshuklaa@gmail.com</a> with your registered email address and we will respond within 48 hours with your data export.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">What is Explain Back?</div>
+          <div class="faq-a">After completing a spark session you can speak or type your understanding of the topic. Our AI grades your explanation and gives you personalised feedback on accuracy, depth and clarity.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">My progress reset — what happened?</div>
+          <div class="faq-a">Progress is tied to your Google or Apple account. If you signed in with a different account or reinstalled the app without signing in your progress may appear reset. Sign in with your original account to restore your history.</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bug Report -->
+    <div class="section">
+      <div class="section-title">How to Report a Bug</div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-text">Describe what happened — what you tapped, what you expected, what actually happened</div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-text">Include your device — iPhone or Android model, iOS or Android version</div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-text">Include your app version — found in Profile → Settings → About</div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-text">Send to <a href="mailto:dmshuklaa@gmail.com">dmshuklaa@gmail.com</a> with subject line: <strong>Bug Report</strong></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Crisis Support -->
+    <div class="section">
+      <div class="section-title">Crisis Support</div>
+      <p class="crisis-intro">If you or someone you know needs immediate support please contact a crisis helpline. All helplines are free and confidential.</p>
+      <div class="pills">
+        <div class="pill"><span>Tele-MANAS (India)</span>14416</div>
+        <div class="pill"><span>KIRAN (India)</span>1800-599-0019</div>
+        <div class="pill"><span>iCall</span>9152987821</div>
+        <div class="pill"><span>Kids Helpline (AU)</span>1800 55 1800</div>
+        <div class="pill"><span>Lifeline (AU)</span>13 11 14</div>
+        <div class="pill"><span>Emergency</span>112 / 000</div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="footer-brand">
+        Curiositi · <a href="mailto:dmshuklaa@gmail.com">dmshuklaa@gmail.com</a>
+      </div>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+      <div class="footer-copy">© 2026 Curiositi. All rights reserved.</div>
+    </div>
+
+  </div>
+</body>
+</html>
